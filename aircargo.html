@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wafex Cargo- Cargo service</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <!-- <h1 class="text-primary"><i class="fas fa-hand-holding-water me-3"></i>Acuas</h1> -->
+                <img src="img/wafex_cargo_logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown active">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Service</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="aircargo.html" class="dropdown-item active">Air Freight</a>
+                            <a href="ocean.html" class="dropdown-item">Ocean Freight</a>
+                            <a href="groundshipping.html" class="dropdown-item">Land Freight</a>
+                            <a href="wherehousing.html" class="dropdown-item">Wherehousing</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="d-none d-xl-flex me-3">
+                    <div class="d-flex flex-column pe-3 border-end border-primary">
+                        <span class="text-body">Hotline Number</span>
+                        <a href="tel:+971"><span class="text-primary">+971 000000000</span></a>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex me-3">
+                    <div class="d-flex flex-column pe-3  border-primary">
+                        <span class="text-body">Email </span>
+                        <a href="tel:+4733378901"><span class="text-primary">info@wafexcargo.com</span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Air Freight</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Service</a></li>
+                    <li class="breadcrumb-item active text-primary">Air Freight</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Header End -->
+    </div>
+    <!-- Navbar & Hero End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text btn border p-3"><i
+                                class="fa fa-search text-white"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Features  -->
+    <div class="container-fluid about overflow-hidden py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-img rounded h-100">
+                        <img src="img/air_cargo.png" class="img-fluid rounded h-100 w-100"
+                            style="object-fit: cover;" alt="">
+                        <div class="about-exp"><span>Air Freight</span></div>
+                    </div>
+                </div>
+                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="about-item">
+                        <!-- <h4 class="text-primary text-uppercase">About Us</h4> -->
+                        <h1 class="display-3 mb-3">Air Freight</h1>
+                        <p class="mb-4">WAFEX CARGO's air freight services provide a fast, reliable, and flexible solution for transporting goods across the globe. We understand the critical nature of timely deliveries and the importance of maintaining the integrity of your cargo. Our comprehensive air freight solutions are designed to meet the diverse needs of our clients, ensuring that your shipments arrive safely and on schedule.</p>
+                        
+                        <div class="bg-light rounded p-4 mb-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex">
+                                        <div class="pe-4">
+                                        </div>
+                                        <div class="">
+                                            <a href="#" class="h4 d-inline-block mb-3">Safety and Security</a>
+                                            <p class="mb-0">We employ rigorous security measures and adhere to the highest industry standards to protect your goods throughout the entire transportation process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded p-4 mb-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex">
+                                        <div class="pe-4">
+                                        </div>
+                                        <div class="">
+                                            <a href="#" class="h4 d-inline-block mb-3">Competitive Rates</a>
+                                            <p class="mb-0">We leverage our strong relationships with airline partners to offer competitive pricing without compromising on service quality.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- feature Start -->
+    <div class="container-fluid feature bg-light ">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+              
+            </div>
+            <div class="row g-4">
+                <div class=" col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="feature-item p-4">
+                        <div class="feature-icon mb-3"><i class="fas  text-white fa-3x"> 1</i></div>
+                        <a href="#" class="h4 mb-3">Safety and Security</a>
+                        <p class="mb-3">The safety of your cargo is our top priority. We employ rigorous security measures and adhere to the highest industry standards to protect your goods throughout the entire transportation process. Our advanced tracking systems provide real-time updates, giving you peace of mind and complete visibility over your shipments.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="feature-item p-4">
+                        <div class="feature-icon mb-3"><i class="fas text-white fa-3x">2</i></div>
+                        <a href="#" class="h4 mb-3">Customized Solutions</a>
+                        <p class="mb-3">We understand that every shipment is unique. Our air freight services are tailored to meet your specific requirements, whether you need express shipping, temperature-controlled transport, or specialized handling for fragile items.</p>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="feature-item p-4">
+                        <div class="feature-icon mb-3"><i class="fas text-white fa-3x">3</i></div>
+                        <a href="#" class="h4 mb-3">Expertise and Support</a>
+                        <p class="mb-3">Our team of air freight experts is highly skilled and knowledgeable, offering personalized support and guidance at every step. From planning and booking to customs clearance and delivery, we manage all aspects of the air freight process, ensuring a smooth and hassle-free experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="feature-item p-4">
+                        <div class="feature-icon mb-3"><i class="fas text-white fa-3x">4</i></div>
+                        <a href="#" class="h4 mb-3">Competitive Rates</a>
+                        <p class="mb-3">We leverage our strong relationships with airline partners to offer competitive pricing without compromising on service quality. Our transparent pricing structure ensures that you receive the best value for your money.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- feature End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5 mb-5 align-items-center">
+                <div class="col-lg-7">
+                    <div class="position-relative mx-auto">
+                        <img src="img/wafex_cargo_logo.png" alt="Logo" style="width: 160px; height: 50px;">
+                        <img src="img/xenex_cargo.png" alt="Logo" style="width: 160px; height: 60px;">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <div class="footer-item">
+                            <h3 class="text-white mb-4">
+                                Why Choose Us
+
+                            </h3>
+                            <p class="mb-3">Connecting you with the world, one shipment at a time. Our reliable cargo
+                                services ensure your goods reach their destination safely and on time.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-2">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Quick Link </h4>
+                        <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-white mb-4">Specialised Services</h4>
+                        <a href="groundshipping.html"><i class="fas fa-angle-right me-2"></i> Land Freight</a>
+                        <a href="ocean.html"><i class="fas fa-angle-right me-2"></i> Ocean Freight</a>
+                        <a href="#"><i class="fas fa-angle-right me-2"></i> Air Freight</a>
+                        <a href="clearing-forwading.html"><i class="fas fa-angle-right me-2"></i> Clearing & Forwarding</a>
+                        <a href="dor-to-dor.html"><i class="fas fa-angle-right me-2"></i> Door-To-Door Service</a>
+                        <a href="wherehousing.html"><i class="fas fa-angle-right me-2"></i> Warehousing</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h6 class="text-white mb-4">UAE</h6>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Al Qusais Industrial Area 1 - Dubai</a>
+                        <a href="mailto:info@wafexcargo.com"><i class="fas fa-envelope me-2"></i>
+                            info@wafexcargo.com</a>
+                        <a href="tel:+012 345 67890" class="mb-3"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                        <h6 class="text-white mb-4">Kuwait</h6>
+                        <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Nesto building, Farwaniya, Kuwait</a>
+                        <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +00965-1234567</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-1"></i>www.wafexcargo.com </a>  Copyright ©2024 All rights reserved</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end text-body">
+                    This Website Managed By <a class="border-bottom text-white" href="https://www.appwaysys.com">Appwaysys IT Solution</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <!-- END Back to Top  -->
+
+    <!-- Start whatsapp -->
+    <div class="">
+        <a href="https://wa.me/9744883484?text=Hello,%20I%20need%20your%20service" class="whatsapp">
+            <img src="img/whatsapp.png" >
+        </a>
+    </div>
+    <!-- End whatsapp -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
